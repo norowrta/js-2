@@ -9,7 +9,9 @@ console.log(daysInMonth, hoursInMonth, minutesInMonth);
 
 const health = 100;
 const energy = 100;
-console.log(parseFloat(health) - 50 + "hp", parseFloat(energy) - 50 + "%");
+console.log(
+  parseFloat(health) - Math.round(Math.random() * (100 - 1) + 1) + "hp",
+  parseFloat(energy) - Math.round(Math.random() * (100 - 1) + 1) + "%");
 
 const totalPrice = prompt("Введіть суму");
 const discountedPrice = totalPrice - (totalPrice * 10) / 100;
@@ -31,8 +33,8 @@ const number = prompt("Введіть число");
 const sqrtNumber = Math.sqrt(number);
 console.log(sqrtNumber);
 
-const integer = 42; 
-const stringNumber = "256"; 
-const convertedInt = parseInt(stringNumber); 
-const convertedString = integer.toString(); 
+const integer = 42;
+const stringNumber = "256";
+const convertedInt = parseInt(stringNumber);
+const convertedString = integer.toString();
 console.log(convertedInt, convertedString);
